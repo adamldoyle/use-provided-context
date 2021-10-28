@@ -22,7 +22,7 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [peerDepsExternal(), resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json', useTsconfigDeclarationDir: true }), terser()],
+    plugins: [peerDepsExternal(), resolve(), commonjs(), typescript({ useTsconfigDeclarationDir: true }), terser()],
   },
   {
     input: './build/dts/index.d.ts',
