@@ -1,12 +1,13 @@
 {
-  "name": "@adamldoyle/react-library-template",
-  "version": "0.0.0",
+  "name": "@adamldoyle/use-provided-context",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": "https://github.com/adamldoyle/use-provided-context",
   "license": "MIT",
   "scripts": {
     "prepare": "yarn run build",
