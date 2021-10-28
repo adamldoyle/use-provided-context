@@ -1,6 +1,6 @@
-# react-library-template
+# use-provided-context
 
-Template to use for building React libraries.
+Hook for accessing context while enforcing that the context was provided.
 
 ## Features
 
@@ -8,7 +8,7 @@ Template to use for building React libraries.
 
 ## Installation
 
-1. `yarn add @adamldoyle/react-library-template`
+1. `yarn add @adamldoyle/use-provided-context`
 
 ## Examples
 
@@ -17,6 +17,24 @@ Template to use for building React libraries.
 OR
 
 - `yarn storybook`
+
+OR
+
+```
+interface IStoryContext {
+  value: string;
+}
+
+const StoryContext = createContext<IStoryContext | undefined>(undefined);
+StoryContext.displayName = 'StoryContext';
+
+const StoryComponent: FC = () => {
+  // StoryContext is guaranteed to provide IStoryContext in a typesafe way, an undefined context will throw an error
+  const { value } = useProvidedContext(StoryContext);
+
+  return <>Value from context: {value}</>;
+};
+```
 
 ## Development
 

@@ -1,5 +1,5 @@
 {
-  "name": "@adamldoyle/react-library-template",
+  "name": "@adamldoyle/use-provided-context",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
